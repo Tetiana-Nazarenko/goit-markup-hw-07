@@ -18,33 +18,91 @@
     <header class="section header-section">
         <div class="container">
             <div class="header-block">
-                <nav class="navigation">
-                    <a class="logo" href="./index.html">Web<span class="logo-item">Studio</span> </a>
-                    <ul class="header-list">
-                        <li class="header-item">
-                            <a class="menu-item " href="./index.html">Studio</a>
+                <a class="logo" href="./index.html">Web<span class="logo-item">Studio</span> </a>
+
+                <button class="btn-hamburger-open js-open-menu">
+                    <svg class="btn-hamburger-icon" width="28" height="18">
+                        <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                    </svg>
+                </button>
+
+
+                <div class="mobile-navigation is-open js-menu-container">
+                    <button type="button" class="btn-modal btn-hamburger-close js-close-menu">
+                        <svg class="btn-icon">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+
+
+
+
+
+
+
+                    <nav class="navigation">
+                        <ul class="header-list">
+                            <li class="header-item">
+                                <a class="menu-item " href="./index.html">Studio</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="menu-item current" href="">Portfolio</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="menu-item" href="">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <address class="address">
+                        <ul class="address-list">
+                            <li class="address-items ">
+                                <a class="address-item address-item-email"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="address-items">
+                                <a class="address-item address-item-phone" href="tel:+110001111111">+11 (000)
+                                    111-11-11</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="icon-block-mobile">
+                        <li>
+                            <a class="icons-footer icon-first icons-mobile" href="">
+                                <svg class="footer-items">
+                                    <use href="./images/icons.svg#icon-instagram"> </use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="header-item">
-                            <a class="menu-item current" href="">Portfolio</a>
+                        <li>
+                            <a class="icons-footer icons-mobile" href="">
+                                <svg class="footer-items">
+                                    <use href="./images/icons.svg#icon-twitter"> </use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="header-item">
-                            <a class="menu-item" href="">Contacts</a>
+                        <li>
+                            <a class="icons-footer icons-mobile" href="">
+                                <svg class="footer-items">
+                                    <use href="./images/icons.svg#icon-facebook"> </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icons-footer icons-mobile" href="">
+                                <svg class="footer-items">
+                                    <use href="./images/icons.svg#icon-linkedin"> </use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <address class="address">
-                    <ul class="address-list">
-                        <li class="address-items">
-                            <a class="address-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="address-items">
-                            <a class="address-item" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                        </li>
-                    </ul>
-                </address>
+
+
+                </div>
             </div>
         </div>
     </header>
+
     <main>
         <section class="section buttons-section">
             <div class="container">
@@ -218,7 +276,7 @@
             </div>
             <div class="footer-link">
                 <h3 class="social-title">Social media</h3>
-                <ul class="work-block">
+                <ul class="icon-block-footer">
                     <li>
                         <a class="icons-footer icon-first" href="">
                             <svg class="footer-items">
