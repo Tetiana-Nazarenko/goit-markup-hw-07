@@ -1087,6 +1087,14 @@ body {
 	.footer-section {
 		text-align: left;
 	}
+	.footer-list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 24px;
+		row-gap: 72px;
+		padding-left: 108px;
+		/*justify-content: center;*/
+	}
 	.footer-text {
 		display: block;
 		margin: 0;
@@ -1117,13 +1125,7 @@ body {
 	.btn-submit {
 		margin-left: 24px;
 	}
-	.footer-list {
-		display: flex;
-		flex-wrap: wrap;
-		column-gap: 24px;
-		row-gap: 72px;
-		justify-content: center;
-	}
+
 	.footer-text {
 		margin-bottom: 0px;
 	}
@@ -1144,6 +1146,8 @@ body {
 		flex-wrap: nowrap;
 		column-gap: 0px;
 		row-gap: 0px;
+		padding-left: 0px;
+		justify-content: center;
 	}
 }
 .icons-footer {
@@ -1236,7 +1240,7 @@ body {
 	}
 	.buttons-section {
 		padding-top: 48px;
-
+		padding-bottom: 0px;
 		background-color: var(--color-white);
 	}
 	.button-item {
@@ -1270,6 +1274,11 @@ body {
 		font-size: 20px;
 		line-height: 24px;
 	}
+
+	.gallery-items {
+		max-width: 360px;
+		margin-bottom: 48px;
+	}
 	.text {
 		text-align: left;
 	}
@@ -1278,9 +1287,15 @@ body {
 		padding-left: 16px;
 		padding-top: 32px;
 		padding-bottom: 32px;
+
 		border-left: 1px solid var(--color-border);
 		border-bottom: 1px solid var(--color-border);
 		border-right: 1px solid var(--color-border);
+	}
+}
+@media screen and (min-width: 480px) {
+	.container {
+		min-width: 428px;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -1322,7 +1337,7 @@ body {
 		display: flex;
 
 		column-gap: 24px;
-		row-gap: 72px;
+		/*row-gap: 72px;*/
 		flex-wrap: wrap;
 		list-style-type: none;
 		justify-content: start;
@@ -1334,6 +1349,7 @@ body {
 	}
 
 	.buttons-section {
+		padding-top: 64px;
 		padding-top: 96px;
 	}
 	.buttons-block {
@@ -1342,6 +1358,9 @@ body {
 	.gallery-block {
 		row-gap: 48px;
 		justify-content: center;
+	}
+	.gallery-items {
+		margin-bottom: 0px;
 	}
 }
 /*Gallery*/
